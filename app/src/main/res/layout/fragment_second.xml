@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:clipChildren="false"
+    >
+    <FrameLayout
+        android:tag="background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:clipChildren="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/inner_layout"
+            android:clipChildren="false">
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#996000"
+                android:textAlignment="center"
+                android:text="View 1"
+                android:tag="tv1"/>
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="#226000"
+                android:textAlignment="center"
+                android:text="View 2"
+                android:tag="tv2"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="#226099"
+            android:textAlignment="center"
+            android:text="View 3"
+            android:tag="tv3"/>
+    </LinearLayout>
+
+
+</FrameLayout>
